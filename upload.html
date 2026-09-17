@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upload Your Talent-Naija Talent Hub</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial,sans-serif;
+                background: linear-gradient(135deg,#06142e,#123b6d);
+               color: white;
+               }
+                .container{
+                    width: 90%;
+                    max-width: 600px;
+                    margin: 40px auto;
+                    background: rgba(255,255,255,0.1);
+                    padding: 30px; 
+                    border-radius: 20px;
+                    }
+                    h1{
+                        text-align: center;
+                        color: #ffd700;
+                        }
+                        label{
+                            display: block;
+                            margin-top: 18px;
+                            margin-bottom: 7px;
+                            font-weight: bold;
+                            }
+                            input,select,textarea{
+                                width: 100%;
+                                padding: 13px;
+                                box-sizing: border-box;
+                                border: none;
+                                border-radius: 8px;
+                                font-size: 16px;
+                                margin-bottom: 5px;
+                                }
+                                input[type="file"]{
+                                    background: white;
+                                    padding: 10px;
+                                    }
+                                    button{
+                                        width: 100%;
+                                        box-sizing: border-box;
+                                        margin-top: 25px;
+                                        padding: 15px;
+                                        background: #ffd700;
+                                        color: #06142e;
+                                        border: none;
+                                        border-radius: 10px;
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                        }
+                                textarea{
+                                    height: 100px;
+                                    }
+                                    button{
+                                        width: 100%;
+                                        margin-top: 25px;
+                                        padding: 14px;
+                                        background: #ffd700;
+                                        text-decoration: none;
+                                        }
+                                        input[type="file"]{
+                                            background: white;
+                                            color: #16002b;
+                                            padding: 10px;
+                                            border-radius: 8px;
+                                            width: 90%;
+                                            margin-bottom: 15px;
+                                            }
+                                        </style>
+                                        </head>
+                                        <body>
+                                            <div class="container">
+                                                <h1>Upload Your Talent</h1>
+                                                <form onsubmit="show Message(event);return false;">
+                                                    <label>Full name</label>
+<input type="text"placeholder="Enter your full name"required>
+<label>Stage Name</label>
+<input type="text"placeholder="Enter Your Stage Name">
+<label>Talent Category</label>
+<select required>
+    <Option value="">choose your Talent</Option>
+    <Option>singing</opption>
+        <Option>ART</option>
+            <option>DESIGN</option>
+                <optioon>DANCING</option>
+                    <opption>ACTING</option>
+                        <option>MUSIC PRODUCTION</option>
+                        <opption>OTHER</option>
+                        </select>
+                        <label>Profile Photo</label>
+                        <input type="file"accept="image/*">
+                        <img id="photopreview"width="150"style="display:none;border-radius:50%;margin-top:10px;">
+                        <label>About Your Talent</label>
+                        <textarea placeholder="Tell us about your talent..."required></textarea>
+                        <label>Upload Your Work</label>
+                        <input type="file"accept="image/*,audio/*,video/*">
+                        <button type="button"onclick="alert('Your Talent Has Been submitted Successfuly!')">Submit Your Talent</button>                            
+                    </form>
+                    <a href="index.html"class="back">Back to Home</a>
+                    </div>
+                    <Script>
+                        function showMessage(event){
+                            event.preventDefault();
+                            alert("Your Talent Has Been Submitted Successfully");
+                            }
+                            </script>
+                            <script>
+                                const photolnput=document.queryselector('input[type="file"]');
+                                const photopreview=document.getElementByld('photopreview');
+                                photolnput.addEventListener('change',function(){
+                                    const file=this.files[0];
+                                    if (file){
+                                        photopreview.src=URL.createObjectURL(file);
+                                        photopreview.style.display='block';
+                                        }
+                                        });
+                                        </script>
+                    </body>
+                    </html>                                        

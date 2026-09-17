@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technology - Naija Talent Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #081b33;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background: #0d2a4d;
+            padding: 25px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00e5ff;
+        }
+
+        header p {
+            color: #d9e6f2;
+        }
+
+        .talents {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .card {
+            width: 260px;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .card p {
+            color: #eeeeee;
+            margin-bottom: 25px;
+        }
+
+        .tech1 {
+            background: #1565c0;
+        }
+
+        .tech2 {
+            background: #00897b;
+        }
+
+        .tech3 {
+            background: #6a1b9a;
+        }
+
+        button {
+            background: #00e5ff;
+            color: #081b33;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        .back {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="naija-logo.png" alt="Naija Talent Hub Logo" class="logo">
+
+        <h1>Technology</h1>
+
+        <p>Discover talented technology creators on Naija Talent Hub</p>
+    </header>
+
+    <div class="talents">
+
+        <div class="card tech1">
+            <h2>Tech Talent 1</h2>
+            <p>Technology Talent</p>
+
+            <button onclick="window.location.href='tech1.html'">
+                View Profile
+            </button>
+        </div>
+
+        <div class="card tech2">
+            <h2>Tech Talent 2</h2>
+            <p>Technology Talent</p>
+
+            <button onclick="window.location.href='tech2.html'">
+                View Profile
+            </button>
+        </div>
+
+        <div class="card tech3">
+            <h2>Tech Talent 3</h2>
+            <p>Technology Talent</p>
+
+            <button onclick="window.location.href='tech3.html'">
+                View Profile
+            </button>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <button onclick="window.location.href='talents.html'">
+            Back to Talents
+        </button>
+    </div>
+
+</body>
+</html>
